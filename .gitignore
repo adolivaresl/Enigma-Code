@@ -1,0 +1,16 @@
+coverage/
+node_modules/
+.DS_Store
+*.log
+src/splash.js
+src/splash.html
+src/splash.css
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*

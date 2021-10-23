@@ -1,0 +1,298 @@
+.numberOffset, .message, .text--big, .outputMessage{
+    background-color: transparent;
+    border: none;
+}
+
+.forEncoding{
+    margin: 35px 0;
+    display: flex; 
+}
+.forEncoding input[type=number], .forEncoding .message {
+    border: none;
+    border-bottom: 2px solid white;
+}
+
+.forEncoding input[type=number]{
+    width: 20%;
+    margin-right: 10px;
+    color: white;
+    font-size: 90px;
+    outline: none;
+}
+.forEncoding input[type=number]::placeholder{
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    position: absolute;
+    bottom: 5px;
+    -webkit-transition: all ease-out 0.5s;
+  transition: all ease-out 0.5s;
+}
+
+.forEncoding input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+.forEncoding input[type=number]:focus::placeholder, .forEncoding .message:focus::placeholder {
+    color: transparent;
+  }
+
+.forEncoding .message::placeholder{
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 80px;
+    position: absolute;
+    bottom: 5px;
+    -webkit-transition: all ease-out 0.5s;
+  transition: all ease-out 0.5s;
+}
+
+.forEncoding .message{
+    width: 80%;
+    outline: none;
+    resize: none;
+    font-size: 15px;
+    color: white;
+}
+.outputMessage {
+    outline: none;
+    resize: none;
+    font-size: 15px;
+    color: teal;
+}
+#rootDecode, #rootEncode{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.outputMessage{
+    min-height: 255px;
+    margin-bottom: 20px;
+}
+
+.btnCopy{
+    background-color: transparent;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 7.5em;
+    font-weight: 700;
+    line-height: 110px;
+    margin-left: -8px;
+}
+/* INICIO SECCION ANIMADA */
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.slider__navi {
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	z-index: 999;
+}
+
+.slider__navi a {
+	display: block;
+	height: 30px;
+	width: 150px;
+	text-align: right;
+    text-decoration: none;
+    color: lightgrey;
+}
+
+.slider__navi a.active {
+	color: teal;
+}
+
+body {
+	position: relative;
+	font-size: 100%;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.flex__container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	-webkit-flex-flow: row wrap;
+	-moz-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	-o-flex-flow: row wrap;
+	flex-flow: row wrap; 
+	-webkit-justify-content: flex-start;
+	-moz-justify-content: flex-start;
+	-ms-justify-content: flex-start;
+	-o-justify-content: flex-start;
+	justify-content: flex-start;
+	height: 100vh;
+	width: 100%;
+	z-index: 1;
+}
+
+.flex__container.flex--active {
+	z-index: 2;
+}
+
+.text--sub {
+	font-size: 16px;
+	letter-spacing: 0.5rem;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+}
+
+.text--big {
+	font-family: 'Poppins', sans-serif;
+	font-size: 7.5em;
+	font-weight: 700;
+	line-height: 110px;
+  margin-left: -8px;
+  color: white;
+}
+
+.text--normal {
+	font-size: 20px;
+	color: rgba(255, 255, 255, 0.8);
+	line-height: 22px;
+	margin-top: 25px;
+}
+
+.text__background {
+	font-family: 'Poppins', sans-serif;
+	position: absolute;
+	left: 72px;
+	bottom: -60px;
+	color: rgba(0,0,0,0.05);
+	font-size: 170px;
+	font-weight: 700;
+}
+
+.flex__item {
+	height: 100vh;
+	color: #fff;
+	transition: transform 0.1s linear;
+}
+
+.flex__item--left {
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	align-items: center;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
+	width: 60%;
+	transform-origin: left bottom;
+	transition: transform 0.1s linear 0.4s;
+	opacity: 0;
+	position: relative;
+	overflow: hidden;
+}
+
+.flex__item--right {
+	width: 40%;
+	transform-origin: right center;
+	transition: transform 0.1s linear 0s;
+	opacity: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: teal;
+    padding-left: 30px;
+    padding-top: 70px;
+}
+
+.flex--preStart .flex__item--left,
+.flex--preStart .flex__item--right,
+.flex--active .flex__item--left,
+.flex--active .flex__item--right {
+	opacity: 1;
+}
+
+/* Piplup */
+
+.flex--piplup .flex__item--left {
+	background: #3e9fe6;
+}
+
+.flex--piplup .flex__item--right {
+	background: #d3eaef;
+}
+
+/* Pikachu */
+
+.flex--pikachu .flex__item--left {
+	background: #f8d41f;
+}
+
+.flex--pikachu .flex__item--right {
+	background: #f4ecc5;
+}
+
+.flex__content {
+	margin-left: 80px;
+	width: 80%;
+	opacity: 1;
+	transform: translate3d(0,0,0);
+	transition: transform 0.2s linear 0.2s, opacity 0.1s linear 0.2s;
+}
+
+.pokemon__img {
+	position: absolute;
+	bottom: 20px;
+	right: 15%;
+	max-height: 40vw;
+	opacity: 1;
+	transform: translate3d(0,0,0);
+	transition: opacity 0.43s 0.6s, transform 0.4s 0.65s cubic-bezier(0, 0.88, 0.4, 0.93);
+}
+
+/* Animate-START point */
+
+.flex__container.animate--start .flex__content {
+	transform: translate3d(0,-200%,0);
+	opacity: 0;
+}
+
+.flex__container.animate--start .pokemon__img {
+	transform: translate3d(-200px,0,0);
+	opacity: 0;
+}
+
+/* Animate-END point */
+
+.flex__container.animate--end .flex__item--left {
+	transform: scaleY(0);
+}
+
+.flex__container.animate--end .flex__item--right {
+	transform: scaleX(0);
+}
+
+.flex__container.animate--end .flex__content {
+	transform: translate3d(0,200%,0);
+	opacity: 0;
+}
+
+.flex__container.animate--end .pokemon__img {
+	transform: translate3d(200px,0,0);
+	opacity: 0;
+}
+/* FIN SECCIÓN ANIMADA */
+
