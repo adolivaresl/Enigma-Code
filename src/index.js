@@ -1,6 +1,5 @@
 import cipher from './cipher.js';
 
-
 document.getElementById('Encode').addEventListener('click', () => {
     let offset = parseInt(document.getElementById('keyEncode').value);
     let message = document.getElementById('messageEncode').value; 

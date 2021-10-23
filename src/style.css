@@ -2,7 +2,6 @@
     background-color: transparent;
     border: none;
 }
-
 .forEncoding{
     margin: 35px 0;
     display: flex; 
@@ -11,7 +10,6 @@
     border: none;
     border-bottom: 2px solid white;
 }
-
 .forEncoding input[type=number]{
     width: 20%;
     margin-right: 10px;
@@ -35,7 +33,6 @@
 .forEncoding input[type=number]:focus::placeholder, .forEncoding .message:focus::placeholder {
     color: transparent;
   }
-
 .forEncoding .message::placeholder{
     color: white;
     font-size: 24px;
@@ -46,7 +43,6 @@
     -webkit-transition: all ease-out 0.5s;
   transition: all ease-out 0.5s;
 }
-
 .forEncoding .message{
     width: 80%;
     outline: none;

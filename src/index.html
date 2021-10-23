@@ -1,23 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Enigma Code</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-     <!-- INICIO SECCIONES ANIMADAS -->
-     <div class="slider__warpper">
+    <!-- INICIO SECCIONES ANIMADAS -->
+    <div class="slider__warpper">
       <div class="flex__container flex--pikachu flex--active" data-slide="1">
         <div class="flex__item flex__item--left">
           <div class="flex__content">
             <p class="text--sub">EnigmaCode</p>
-            <p class="text--normal">Ingresa tu número y el texto y dale click a cifrar</p>
+            <p class="text--normal">
+              Ingresa tu número y el texto y dale click a cifrar
+            </p>
             <div class="forEncoding">
-            <input type="number" id="keyEncode" class="numberOffset" placeholder="Número">
-            <textarea name="" id="messageEncode" cols="30" rows="10" class="message" placeholder="Mensaje"></textarea>
+              <input
+                type="number"
+                id="keyEncode"
+                class="numberOffset"
+                placeholder="Número"
+              />
+              <textarea
+                name=""
+                id="messageEncode"
+                cols="30"
+                rows="10"
+                class="message"
+                placeholder="Mensaje"
+              ></textarea>
             </div>
-            <button class="text--big" id="Encode">Cifrar</button>           
+            <button class="text--big" id="Encode">Cifrar</button>
           </div>
         </div>
         <div class="flex__item flex__item--right">
@@ -28,12 +42,26 @@
         <div class="flex__item flex__item--left">
           <div class="flex__content">
             <p class="text--sub">EnigmaCode</p>
-            <p class="text--normal">Ingresa tu número y el texto y dale click a decifrar</p>
+            <p class="text--normal">
+              Ingresa tu número y el texto y dale click a decifrar
+            </p>
             <div class="forEncoding">
-              <input type="number" id="keyDecode" class="numberOffset" placeholder="Número">
-              <textarea name="" id="messageDecode" cols="30" rows="10" class="message" placeholder="Mensaje"></textarea>
+              <input
+                type="number"
+                id="keyDecode"
+                class="numberOffset"
+                placeholder="Número"
+              />
+              <textarea
+                name=""
+                id="messageDecode"
+                cols="30"
+                rows="10"
+                class="message"
+                placeholder="Mensaje"
+              ></textarea>
             </div>
-            <button class="text--big" id="Decode">Decifrar</button>    
+            <button class="text--big" id="Decode">Decifrar</button>
           </div>
         </div>
         <div class="flex__item flex__item--right">
@@ -41,14 +69,16 @@
         </div>
       </div>
     </div>
-    
     <div class="slider__navi">
       <a href="#" class="slide-nav active" data-slide="1">Cifrar</a>
       <a href="#" class="slide-nav" data-slide="2">Decifrar</a>
     </div>
-     <!-- FIN SECCIONES ANIMADAS -->
-    
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <!-- FIN SECCIONES ANIMADAS -->
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
     <script src="animation.js"></script>
     <script src="index.js" type="module"></script>
   </body>
